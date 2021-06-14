@@ -10,13 +10,14 @@
 * [Support](#Support)
 
 ## Development
-
+docker-compose up
 ### Prerequisites
 
 ```shell
+apt install docker
 apt install docker-compose git
 cd /opt
-git clone https://github.com/ursais/template template
+git clone https://github.com/ursais/superset
 ```
 
 ### Build
