@@ -31,7 +31,10 @@ docker-compose build
 ```shell
 docker-compose up
 ```
-
+### Stop
+```shell
+docker-compose down
+```
 ### Test
 
 ```shell
