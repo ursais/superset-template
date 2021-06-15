@@ -3,19 +3,18 @@
   alt="Superset"
   width="500"
 />
-
-## Development
-```shell
-docker-compose --env-file docker/.env build
-docker-compose --env-file docker/.env up
-```
 ### Prerequisites
-
 ```shell
 apt install docker
 apt install docker-compose git
 cd /opt
 git clone https://github.com/ursais/superset
+```
+
+### Development
+```shell
+docker-compose --env-file docker/.env build
+docker-compose --env-file docker/.env up
 ```
 
 ### Run from latest built image
@@ -26,6 +25,16 @@ docker-compose -f docker-compose-non-dev.yml up
 ```shell
 docker-compose down
 ```
+
+### Remove
+```shell
+# Stop all the running containers
+docker container stop $(docker container ls -aq)
+
+#Remove all stopped containers, dangling images, and unused networks
+docker system prune --volumes -f
+```
+
 ### Test
 
 ```shell
