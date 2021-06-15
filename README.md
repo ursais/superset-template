@@ -6,7 +6,7 @@
 
 ## Development
 ```shell
-docker-compose --env-file/.env build
+docker-compose --env-file docker/.env build
 docker-compose --env-file docker/.env up
 ```
 ### Prerequisites
@@ -20,7 +20,7 @@ git clone https://github.com/ursais/superset
 
 ### Run from latest built image
 ```shell
-docker-compose -f docker-compose-non-dev.yml
+docker-compose -f docker-compose-non-dev.yml up
 ```
 ### Stop
 ```shell
