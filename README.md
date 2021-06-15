@@ -34,7 +34,9 @@ docker-compose up
 
 ### Test
 
-* 
+```shell
+docker-compose run odoo --test-enable --workers=0 --stop-after-init -d <DATABASE NAME>  -i <ADDONS>
+```
 
 ## Operations
 
@@ -43,4 +45,4 @@ Take a look at [README.md](./helm/README.md)
 ## Support
 
 Report any issue to this
-[Github project](https://github.com/ursais/template/issues).
+[Github project](https://github.com/ursais/superset-template/issues).
