@@ -11,16 +11,17 @@ cd /opt
 git clone https://github.com/ursais/superset
 ```
 
+### Run from latest built image
+```shell
+docker-compose -f docker-compose-non-dev.yml up
+```
+
 ### Development
 ```shell
 docker-compose --env-file docker/.env build
 docker-compose --env-file docker/.env up
 ```
 
-### Run from latest built image
-```shell
-docker-compose -f docker-compose-non-dev.yml up
-```
 ### Stop
 ```shell
 docker-compose down
